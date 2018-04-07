@@ -1,0 +1,418 @@
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+  line-height: 1.5;
+}
+
+.top-bar{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  background-color: #563D7C;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.brand{
+  color: rgba(255,255,255,1);
+}
+
+.d-block{
+  height: 2.25em;
+  width: 2.25em;
+}
+.svg{
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.left{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin:10px;
+  padding: 2px;
+}
+
+.tabs{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+
+.tabs div{
+  margin: 7px;
+  color: rgba(255,255,255);
+  flex: auto;
+}
+
+.active{
+  font-weight: 500;
+  color: rgba(255,255,255,1)!important;
+}
+
+.right{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin:10px;
+  padding: 2px;
+  margin-left: auto;
+}
+
+.right div{
+  margin: 7px;
+  color: rgb(255,255,255);
+}
+
+.button{
+  opacity: 0.9;
+  border: 2px solid #FFE484;
+  color: #FFE484;
+  border-radius: 4px;
+  margin: 10px 30px 10px 0px;
+  padding: 8px 18px 6px 18px;
+  font-weight: 500;
+}
+
+.content{
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  left: 0;
+  top: 10vh;
+}
+
+.sidebar{
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  top:10vh;
+  cursor: pointer;
+}
+
+.search{
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid #E5E5E5;
+  padding: 12px 18px 12px 18px;
+}
+
+.search div{
+  /* display:inline-block; */
+}
+
+#box{
+  width: 14.5vw;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+  line-height: 32px;
+}
+
+.nav-down{
+  display: none;
+
+}
+
+.bars{
+  font-size: 2rem;
+  display: none;
+}
+
+
+.bars-new{
+  display: none;
+}
+
+.items{
+  color: #595959;
+  width: 15vw;
+  padding: 12.5px 14.5px;
+  height:75vh;
+  overflow-y: scroll;
+  margin-left: 5px;
+}
+
+.list-item{
+  font-weight: 450;
+  margin-top: 10px;
+}
+
+.list2{
+  margin-top: 30px;
+}
+
+.list-head{
+  margin-bottom: 30px;
+}
+
+.list-head div{
+  margin: 10px 0;
+  font-weight: lighter;
+  font-size: 0.925em
+}
+
+.main{
+  padding: 0px 30px;
+  width: 61.5vw;
+  position: relative;
+  left: 19vw;
+  top: 1.75vw;
+}
+
+.heading{
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+.info{
+  font-size: 1.5rem;
+  width: 95%;
+  font-weight: lighter;
+}
+
+
+.sub-contain{
+  width: 95%;
+}
+
+.sub-contain ul li{
+  margin: 5px 0;
+}
+
+.h2{
+ font-size: 2rem;
+ font-weight: 500;
+ padding-top: 25px;
+}
+
+.nav{
+  display: flex;
+  flex-flow: row nowrap;
+  border: 2px #F8F9FA solid;
+  padding: 17.5px;
+  justify-content: space-between;
+  width: 57.5vw;
+  }
+
+.nav-left{
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #F8F9FA;
+  padding: 15px;
+}
+
+.nav-left div{
+  margin: 8px;
+}
+
+.nav-right{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #F8F9FA;
+  padding: 15px;
+}
+
+.menu{
+  position: absolute;
+  opacity: 1;
+  border: 1px solid #D2D2D4;
+  display: none;
+}
+
+.link{
+  position: fixed;
+  right: 4vw;
+  top: 12vh;
+  padding: 12px;
+  border-left: 1px solid #EEEEEE;
+  color: #99979C;
+  cursor: pointer;
+}
+
+.sub-links{
+  position: relative;
+  left: 20px;
+}
+
+.link div{
+  margin: 6px;
+  font-weight: 400;
+  font-size: 0.90rem;
+}
+
+.tabs:hover{
+  opacity: 1;
+}
+
+.btn {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #F8F9FA;
+
+}
+
+.btn div{
+  height: 8vh;
+  margin: 5px 0px 0px 0px;
+}
+
+.btn div input{
+  height: 100%;
+  width: 100%
+}
+
+.btn div button{
+  height: 107.5%;
+  width: 100%;
+
+}
+
+.menu-z{
+  border: 1px solid #D9D9D9;
+  display: none;
+}
+
+.pink{
+  color: #E93EAA;
+}
+
+@media screen and (max-width:1200px){
+  .link{
+    display: none;
+  }
+
+.search{
+  margin-top: 5px;
+  padding-bottom: 8.5px;
+}
+
+}
+
+@media screen and (max-width:990px){
+  .button{
+    display: none;
+  }
+
+  .nav{
+    width: 70vw;
+  }
+  .nav-h{
+    display: none;
+  }
+
+  .bars-new{
+    display: block;
+    position: relative;
+    padding: 8px 8px 4px 8px;
+  }
+
+  .nav-left{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .nav-down{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:768px){
+  .top-bar{
+    position: relative;
+  }
+
+  .right{
+  display: none;
+}
+
+  .left{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100vw;
+
+}
+
+.items{
+  display: none;
+  width: inherit;
+  padding: 12.5px 17.5px;
+  height:auto;
+  overflow-y: auto;
+  margin-left: 5px;
+
+}
+
+.nav{
+  width: 85vw;
+}
+
+.tabs{
+  width: 97vw;
+  font-size: 0.85rem
+}
+
+.content{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+  top: -9.8vh;
+  width:100vw;
+}
+
+.sidebar{
+  position: relative;
+
+}
+
+.search{
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid; */
+}
+
+.search .search-box{
+  flex: 1;
+  flex-basis: 100%;
+}
+
+#box{
+ width: 100%;
+}
+
+.bars{
+  display: block;
+  position: relative;
+  top: -4px;
+  left: 8px;
+}
+
+.bars-new{
+  display: block;
+  position: relative;
+  padding: 8px 8px 4px 8px;
+}
+
+.main{
+  width: 92.5vw;
+  position: relative;
+  top: 7.5vh;
+  left: 0;
+  padding: 1vw;
+  margin-left: 2vw;
+}
+}
